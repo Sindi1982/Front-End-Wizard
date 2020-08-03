@@ -29,10 +29,14 @@
     "eslint-plugin-react": "^7.20.5",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.5",
+    "sass": "^1.26.10",
     "typescript": "^3.9.7"
   },
   "dependencies": {
+    "@types/react-router-dom": "^5.1.5",
+    "include-media": "^1.4.9",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   }
 }

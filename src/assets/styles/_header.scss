@@ -1,0 +1,21 @@
+.header {
+  padding: 1.5em 0 3em;
+}
+
+.header__logo {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 1em;
+}
+
+.header__link {
+  text-decoration: none;
+  color: $color-black;
+}
+
+.header__pill {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+  margin-top: 1em;
+}
