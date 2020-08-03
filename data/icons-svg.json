@@ -1,20 +1,24 @@
 {
+  "route": "icons-svg",
   "name": "ICONS/SVG",
   "keywords": "icons svg images design packs free freebies",
   "links": [
     {
+      "id": 1,
       "title": "Octicons",
       "description": "Your project, Github's icons",
       "url": "https://primer.style/octicons/",
       "type": "website"
     },
     {
+      "id": 2,
       "title": "unDraw",
       "description": "Update collection of SVG imamges that you can use for free",
       "url": "https://undraw.co/illustrations",
       "type": "website"
     },
     {
+      "id": 3,
       "title": "Flaticon",
       "description": "A website for free and paid icons",
       "url": "https://www.flaticon.com/",
