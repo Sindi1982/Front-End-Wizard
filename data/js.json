@@ -6,43 +6,37 @@
       "title": "4 Uses of Javascript map",
       "description": "4 uses of javascripts array map you should know",
       "url": "https://scotch.io/tutorials/4-uses-of-javascripts-arraymap-you-should-know",
-      "type": "article",
-      "date": "November 9, 2018"
+      "type": "article"
     },
     {
       "title": "Demystifying webpack",
       "description": "Get around the confusing learning curve of webpack",
       "url": "https://dev.to/sadarshannaiynar/demystifying-webpack-2f5n",
-      "type": "article",
-      "date": "October 23, 2018"
+      "type": "article"
     },
     {
       "title": "Using data in React with the Fetch API and axios",
       "description": "As you build React applications, you will run into lots of scenarios where you want to handle data from an API.",
       "url": "https://css-tricks.com/using-data-in-react-with-the-fetch-api-and-axios/",
-      "type": "article",
-      "date": "October 23, 2018"
+      "type": "article"
     },
     {
       "title": "10 JavaScript string methods you should know",
       "description": "In this post I will summarize 10 javascript string methods you should at least known according to me.",
       "url": "https://dev.to/frugencefidel/10-javascript-string-methods-you-should-know-4l76",
-      "type": "article",
-      "date": "October 23, 2018"
+      "type": "article"
     },
     {
       "title": "6 Fun React Projects You Can Build Today",
       "description": "6 Projects you can build with React to help learn it",
       "url": "https://daveceddia.com/react-practice-projects/",
-      "type": "article",
-      "date": "October 23, 2018"
+      "type": "article"
     },
     {
       "title": "libreact",
       "description": "React standard library—must-have toolbox for any React project.",
       "url": "https://github.com/streamich/libreact",
-      "type": "code",
-      "date": "October 23, 2018"
+      "type": "code"
     },
     {
       "title": "Cache your React event listeners to improve performance",

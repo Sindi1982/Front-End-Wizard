@@ -6,15 +6,13 @@
       "title": "Git commit",
       "description": "How to write a good git commit message",
       "url": "https://chris.beams.io/posts/git-commit/",
-      "type": "article",
-      "date": "2014-08-31T00:00:00+0000"
+      "type": "article"
     },
     {
       "title": "Checkbot",
       "description": "A collection of over 50 web best practices that will make your site rank higher in search results and chrome plugin",
       "url": "https://www.checkbot.io/",
-      "type": "webapp",
-      "date": "2018-11-09T00:00:00+0000"
+      "type": "webapp"
     }
   ]
 }

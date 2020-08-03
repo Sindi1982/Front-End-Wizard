@@ -9,12 +9,6 @@
       "type": "website"
     },
     {
-      "title": "minii.css",
-      "description": "A minimal CSS framework designed to be all you need.",
-      "url": "https://minii.finleycorrigan.com/",
-      "type": "website"
-    },
-    {
       "title": "spectre",
       "description": "A Lightweight, Responsive and Modern CSS Framework",
       "url": "https://picturepan2.github.io/spectre/",
@@ -54,7 +48,8 @@
       "title": "semantic-ui",
       "description": "Semantic is a development framework that helps create beautiful, responsive layouts",
       "url": "https://semantic-ui.com/",
-      "type": "website"
+      "type": "website",
+      "date": "2014-01-01T00:00:00+0000"
     },
     {
       "title": "base",
@@ -75,12 +70,6 @@
       "type": "website"
     },
     {
-      "title": "rocketcss",
-      "description": "A framework that helps build clean, efficient and responsive websites.",
-      "url": "http://rocketcss.org/",
-      "type": "website"
-    },
-    {
       "title": "cutestrap",
       "description": "A sassy, opinionated CSS Framework. A tiny alternative to Bootstrap.",
       "url": "https://www.cutestrap.com/",
@@ -93,22 +82,10 @@
       "type": "website"
     },
     {
-      "title": "karmacss",
-      "description": "Karma CSS is a great starting point if you only want a barebones boilerplate",
-      "url": "https://karmacss.com/",
-      "type": "website"
-    },
-    {
       "title": "mini.css",
       "description": "Minimal, responsive, style-agnostic CSS framework",
       "url": "https://minicss.org/",
       "type": "website"
-    },
-    {
-      "title": "Bootstrap build",
-      "description": "Bootstrap 4 Builder and customization",
-      "url": "https://bootstrap.build/app/v4.0/",
-      "type": "webapp"
     }
   ]
 }
