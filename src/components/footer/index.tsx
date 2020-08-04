@@ -10,17 +10,17 @@ const Footer: React.FC = () => (
             <div className="footer__grid">
                 <div className="footer__created">
                     <img src={logoImg} alt="Kieran Venison logo" className="footer__created-img" />
-                    <div className="footer__created-details">
-                        <p className="footer__created-title">
+                    <div>
+                        <p>
                             <b>Front End Wizard</b>
                         </p>
-                        <p className="footer__created-description">
+                        <p>
                             Created with love by{" "}
                             <a href="https://www.kieranvenison.co.uk" target="_blank" rel="noreferrer">
                                 Kieran Venison
                             </a>
                         </p>
-                        <p className="footer__created-contributors">
+                        <p>
                             <Link to="/contributors">Contributors</Link>
                         </p>
                     </div>
