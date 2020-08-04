@@ -4,8 +4,10 @@
 @import "grid";
 @import "header";
 @import "pill";
+@import "footer";
 
 body {
+  line-height: 1.15;
   font-family: $font-family;
   font-size: 16px;
   color: $color-black
