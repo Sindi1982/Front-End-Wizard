@@ -1,0 +1,25 @@
+.version-history__container {
+  max-width: 475px;
+  margin: 0 auto;
+}
+
+.version-history__item {
+  margin-bottom: 4em;
+}
+
+.version-history__number {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.version-history__features {
+  list-style-type: disc;
+  background: $color-green;
+  border-radius: $border-radius-sm;
+  padding: 1em 1em 1em 2em;
+}
+
+.version-history__features li:not(:last-child) {
+  margin-bottom: .4em;
+}
