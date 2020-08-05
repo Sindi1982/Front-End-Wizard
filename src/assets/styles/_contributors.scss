@@ -1,0 +1,14 @@
+.contributors {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+
+.contributors a {
+  color: $color-black;
+  font-size: 1.2em;
+  padding: 15px;
+  margin-bottom: 1em;
+}
