@@ -63,7 +63,7 @@ const ContributorsPage: React.FC = () => (
     <div className="container">
         <h2 className="text-center">Contributors</h2>
         <p className="text-center">
-            Special thanks to everyone who has contributed to this project wether through issues or link suggestions!
+            Special thanks to everyone who has contributed to this project whether through issues or link suggestions!
         </p>
         <div className="contributors">
             {contributorsList.map((contributor) => (
