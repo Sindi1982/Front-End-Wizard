@@ -7,12 +7,14 @@ import "./assets/styles/index.scss";
 
 const App: React.FC = () => (
     <Router>
-        <Header />
-        <Switch>
-            <Route path="/contributors" exact component={ContributorsPage} />
-            <Route path="/version-history" exact component={VersionHistoryPage} />
-            <Route path="/" exact component={HomePage} />
-        </Switch>
+        <div id="main">
+            <Header />
+            <Switch>
+                <Route path="/contributors" exact component={ContributorsPage} />
+                <Route path="/version-history" exact component={VersionHistoryPage} />
+                <Route path="/" exact component={HomePage} />
+            </Switch>
+        </div>
         <Footer />
     </Router>
 );
