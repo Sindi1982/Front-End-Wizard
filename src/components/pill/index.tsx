@@ -4,6 +4,6 @@ interface IProps {
     version: string;
 }
 
-const Pill = ({ version }: IProps) => <strong className="pill">v{version}</strong>;
+const Pill = ({ version }: IProps) => <span className="pill">v{version}</span>;
 
 export default Pill;
