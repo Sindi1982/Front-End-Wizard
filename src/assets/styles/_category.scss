@@ -1,0 +1,7 @@
+.category_links {
+  display: grid;
+  grid-gap: 1em;
+  @include media(">=tablet") {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,40 @@
+.link {
+  display: grid;
+  grid-template-columns: 24px 1fr 100px;
+  text-decoration: none;
+  border-radius: $border-radius-sm;
+  padding: 1em;
+  border: 2px solid $color-blue;
+  grid-gap: 1em;
+  align-items: center;
+  background: $color-offwhite;
+  &:focus {
+    box-shadow: 0 0 0  2px lighten($color-blue, 10%);
+    outline: none;
+  }
+}
+
+.link_icon {
+
+}
+
+.link_icon-img {
+  width: 24px;
+  height: 24px;
+}
+
+.link_title {
+  font-weight: 700;
+  color: $color-blue;
+  margin-bottom: .2em;
+}
+.link_description {
+  font-size: .9em;
+  color: $color-black;
+  margin-bottom: .5em;
+}
+
+.link_date {
+  color: $color-black;
+  font-size: .9em;
+}
