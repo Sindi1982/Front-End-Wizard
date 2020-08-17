@@ -30,7 +30,6 @@ const linkReducer = (state = INITIAL_STATE, action: ILinkAction): ILinkGroup[] =
                 error: `Error Loading links`,
                 links: [],
             };
-            console.log(errState);
             return errState;
         case LinkActions.LINK_SUCCESS:
             const successIndex = state.findIndex((linkGroup) => linkGroup.name === (action.payload as ILinkFetch).name);
@@ -42,7 +41,6 @@ const linkReducer = (state = INITIAL_STATE, action: ILinkAction): ILinkGroup[] =
                 error: null,
                 links: (action.payload as ILinkFetch).links,
             };
-            console.log(successState);
             return successState;
         default:
             return state;

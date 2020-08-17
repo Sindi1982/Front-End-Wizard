@@ -20,6 +20,7 @@
   "homepage": "https://github.com/kieranmv95/Front-End-Wizard#readme",
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "@types/moment": "^2.13.0",
     "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "^3.7.1",
@@ -39,6 +40,7 @@
     "@types/redux": "^3.6.0",
     "axios": "^0.19.2",
     "include-media": "^1.4.9",
+    "moment": "^2.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",

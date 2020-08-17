@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import useLinks from "../../hooks/useLinks";
+import { Link } from "../../components";
 
 const CategoryPage: React.FC = () => {
     const { name } = useParams();
@@ -18,14 +19,11 @@ const CategoryPage: React.FC = () => {
     return (
         <div className="container">
             <h2 className="text-center">{name}</h2>
-            {!linkGroup.links.length && <div>No results found</div>}
-            {linkGroup.links.length &&
-                linkGroup.links.map((link) => (
-                    <div key={link._id}>
-                        {link.title} <br />
-                        {link.description}
-                    </div>
-                ))}
+            <div className="category_links">
+                {!linkGroup.links.length && <div>No results found</div>}
+                {linkGroup.links.length > 0 &&
+                    linkGroup.links.map((link) => <Link key={link._id} link={link} bookmarked={false} />)}
+            </div>
         </div>
     );
 };
