@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import useLinks from "../../hooks/useLinks";
 import { Link } from "../../components";
+import { ILinkGroup } from "../../interfaces";
 
 const CategoryPage: React.FC = () => {
     const { name } = useParams();
@@ -11,7 +12,7 @@ const CategoryPage: React.FC = () => {
         fetchLinks(name);
     }, []);
 
-    const linkGroup = links.find((linkGroup) => linkGroup.name === name);
+    const linkGroup = links.find((linkGroup: ILinkGroup) => linkGroup.name === name);
 
     if (!linkGroup || linkGroup.loading) return <div>Loading</div>;
     if (linkGroup.error) return <div>{linkGroup.error}</div>;
