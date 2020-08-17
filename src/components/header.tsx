@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoImg from "../../assets/images/logo.png";
-import Pill from "../pill";
+import logoImg from "../assets/images/logo.png";
+import Pill from "./pill";
 
 const Header: React.FC = () => (
     <header className="header text-center">

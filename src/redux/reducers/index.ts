@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
 import categoryReducer from "./categories";
-import { Reducer } from "react";
-import { IApplictionState } from "../../interfaces";
+import linkReducer from "./links";
 
-const rootReducer = combineReducers<IApplictionState>({
+const rootReducer = combineReducers({
     categories: categoryReducer,
+    links: linkReducer,
 });
+
+export type RootState = ReturnType<typeof rootReducer>;
 
 export default rootReducer;
