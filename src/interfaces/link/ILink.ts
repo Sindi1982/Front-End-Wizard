@@ -1,4 +1,5 @@
 export default interface ILink {
+    _id: string;
     category: string;
     title: string;
     description: string;

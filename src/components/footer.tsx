@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoImg from "../../assets/images/logo-kieran.png";
-import twitterLogo from "../../assets/images/twitter.svg";
-import githubLogo from "../../assets/images/github.svg";
+import logoImg from "../assets/images/logo-kieran.png";
+import twitterLogo from "../assets/images/twitter.svg";
+import githubLogo from "../assets/images/github.svg";
 
 const Footer: React.FC = () => (
     <footer className="footer">
