@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { IApplicationState } from "../interfaces";
 import { CategoryActions } from "../enums";
 import API from "../services/api";
+import { RootState } from "../redux/reducers";
 
 const useCategories = () => {
     const dispatch = useDispatch();
-    const selectCategories = (state: IApplicationState) => state.categories;
+    const selectCategories = (state: RootState) => state.categories;
     const categories = useSelector(selectCategories);
 
     useEffect(() => {
