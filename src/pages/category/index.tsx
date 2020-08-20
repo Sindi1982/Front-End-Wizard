@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import useLinks from "../../hooks/useLinks";
 import useCategories from "../../hooks/useCategories";
-import { Link, Spinner } from "../../components";
+import { Link, Spinner, Error } from "../../components";
 import { ILink, ILinkGroup } from "../../interfaces";
 
 const CategoryPage: React.FC = () => {
@@ -24,22 +24,20 @@ const CategoryPage: React.FC = () => {
         );
     }
 
-    if (linkGroup.error || categories.error) return <div>{linkGroup.error}</div>;
+    if (linkGroup.error || categories.error) return <Error message="Error loading category" />;
 
     const currentCategory = categories.data.find((category) => category.route === name);
 
-    if (!currentCategory) {
-        return <div className="container">No category for {name}</div>;
-    }
+    if (!currentCategory) return <Error message={`No category for ${name}`} />;
 
     return (
         <div className="container">
             <h2 className="text-center category__title">{currentCategory.name}</h2>
             <p className="text-center category__description">{currentCategory.description}</p>
             <div className="category_links">
-                {!linkGroup.links.length && <div>No results found</div>}
-                {linkGroup.links.length > 0 &&
-                    linkGroup.links.map((link: ILink) => <Link key={link._id} link={link} bookmarked={false} />)}
+                {linkGroup.links.map((link: ILink) => (
+                    <Link key={link._id} link={link} bookmarked={false} />
+                ))}
             </div>
         </div>
     );
