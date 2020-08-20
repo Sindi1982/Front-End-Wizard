@@ -9,6 +9,15 @@
 .contributors a {
   color: $color-black;
   font-size: 1.2em;
-  padding: 1em;
-  margin-bottom: 1em;
+  padding: 1em 1.5em;
+  display: inline-grid;
+  text-align: center;
+  grid-gap: .4em;
+}
+
+.contributor__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 999em;
+  justify-self: center;
 }

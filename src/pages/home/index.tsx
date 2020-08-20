@@ -12,7 +12,7 @@ const HomePage: React.FC = () => {
             <p className="text-center description">The best place for front end resources</p>
             <div className="topics">
                 {categories.loading && <Spinner />}
-                {!categories.loading && categories.error && <Error message={categories.error} />;
+                {!categories.loading && categories.error && <Error message={categories.error} />}
                 {!categories.error &&
                     !categories.loading &&
                     categories.data.map((topic: ICategory) => (
