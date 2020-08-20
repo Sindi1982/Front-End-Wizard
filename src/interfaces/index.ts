@@ -5,5 +5,6 @@ import ILink from "./link/ILink";
 import ILinkGroup from "./link/ILinkGroup";
 import ILinkFetch from "./link/ILinkFetch";
 import ILinkAction from "./link/ILinkAction";
+import IContributor from "./contributors/IContributor";
 
-export { ICategory, ICategoryReducer, ICategoryAction, ILink, ILinkGroup, ILinkFetch, ILinkAction };
+export { ICategory, ICategoryReducer, ICategoryAction, ILink, ILinkGroup, ILinkFetch, ILinkAction, IContributor };

@@ -1,78 +1,47 @@
 import React from "react";
+import useContributors from "../../hooks/useContributors";
+import { Error, Spinner } from "../../components";
 
-const contributorsList = [
-    {
-        name: "chiragbhansali",
-        url: "https://github.com/chiragbhansali",
-    },
-    {
-        name: "VirtualDOMinic",
-        url: "https://github.com/VirtualDOMinic",
-    },
-    {
-        name: "FinleyCorrigan",
-        url: "https://github.com/FinleyCorrigan",
-    },
-    {
-        name: "dhrn",
-        url: "https://github.com/dhrn",
-    },
-    {
-        name: "spmedia",
-        url: "https://github.com/spmedia",
-    },
-    {
-        name: "xyclos",
-        url: "https://github.com/xyclos",
-    },
-    {
-        name: "mrcpj1998",
-        url: "https://github.com/mrcpj1998",
-    },
-    {
-        name: "mikekok",
-        url: "https://github.com/mikekok",
-    },
-    {
-        name: "mdawsondev",
-        url: "https://github.com/mdawsondev",
-    },
-    {
-        name: "RyKilleen",
-        url: "https://github.com/RyKilleen",
-    },
-    {
-        name: "jevenson",
-        url: "https://github.com/jevenson",
-    },
-    {
-        name: "RianWebster",
-        url: "https://github.com/RianWebster",
-    },
-    {
-        name: "DoodlePain",
-        url: "https://github.com/DoodlePain",
-    },
-    {
-        name: "20lives",
-        url: "https://github.com/20lives",
-    },
-];
+const ContributorsPage: React.FC = () => {
+    const [contributors, error, loading] = useContributors();
 
-const ContributorsPage: React.FC = () => (
-    <div className="container">
-        <h2 className="text-center">Contributors</h2>
-        <p className="text-center">
-            Special thanks to everyone who has contributed to this project whether through issues or link suggestions!
-        </p>
-        <div className="contributors">
-            {contributorsList.map((contributor) => (
-                <a key={contributor.url} href={contributor.url} target="_blank" rel="noreferrer">
-                    {contributor.name}
-                </a>
-            ))}
+    if (!loading && error) {
+        return (
+            <div className="container">
+                <Error message="Error loading category" />
+            </div>
+        );
+    }
+
+    if (loading) {
+        return (
+            <div className="container">
+                <Spinner />
+            </div>
+        );
+    }
+
+    return (
+        <div className="container">
+            <h2 className="text-center">Contributors</h2>
+            <p className="text-center">
+                Special thanks to everyone who has contributed to this project whether through issues or link
+                suggestions!
+            </p>
+            <div className="contributors">
+                {contributors.map((contributor) => (
+                    <a key={contributor.id.toString()} href={contributor.url} target="_blank" rel="noreferrer">
+                        <img
+                            className="contributor__img"
+                            src={contributor.avatar_url}
+                            alt={`Github profile for ${contributor.login}`}
+                        />
+                        {contributor.login}
+                    </a>
+                ))}
+            </div>
         </div>
-    </div>
-);
+    );
+};
 
 export default ContributorsPage;
