@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link as Route } from "react-router-dom";
 import useLinks from "../hooks/useLinks";
 import useCategories from "../hooks/useCategories";
 import { Link, Spinner, Error } from "../components";
@@ -47,6 +47,9 @@ const CategoryPage: React.FC = () => {
     return (
         <div className="container">
             <h2 className="text-center category__title">{currentCategory.name}</h2>
+            <p className="text-center category__redirect">
+                No the category you are looking for? <Route to="/">Click Here</Route> to view all categories
+            </p>
             <p className="text-center category__description">{currentCategory.description}</p>
             <div className="category_links">
                 {linkGroup.links.map((link: ILink) => (

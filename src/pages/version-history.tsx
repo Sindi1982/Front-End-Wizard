@@ -6,12 +6,13 @@ const versionHistory = [
         version: "3.0.0",
         description: "Full rebuild",
         features: [
-            "Rebuilt the application from the ground up to enhance speed and performance",
             "Split out topics into individual pages",
-            "Introduced starring links",
+            "Introduced bookmarking links locally",
             "Added version history",
             "Added contributors page",
             "Removed a lot of broken links",
+            "Removed hard coded links and made into a seperate API",
+            "Rebuilt the application from the ground up to enhance speed and performance",
         ],
     },
     {

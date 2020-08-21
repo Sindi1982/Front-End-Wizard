@@ -7,10 +7,14 @@
 }
 
 .category_links {
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   display: grid;
   grid-gap: 1em;
   @include media(">=tablet") {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.category__redirect {
+  margin-bottom: .5em;
 }

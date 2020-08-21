@@ -2,10 +2,25 @@
   padding: 1.5em 0 3em;
 }
 
+.header--mini {
+  @include media(">=tablet") {
+    text-align: left;
+    display: inline-grid;
+    grid-template-columns: 85px auto;
+    grid-gap: 1em;
+  }
+}
+
 .header__logo {
   width: 125px;
   height: 125px;
   margin-bottom: 1em;
+}
+
+.header--mini .header__logo {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 0;
 }
 
 .header__link {
@@ -13,9 +28,30 @@
   color: $color-black;
 }
 
+.header--mini h1 {
+  font-size: 2.25em;
+}
+
 .header__pill {
   display: inline-block;
   padding: 1em;
   text-decoration: none;
   margin-top: 1em;
+}
+
+.header--mini .header__pill {
+  padding: 0;
+  margin-top: .5em;
+}
+
+@include media(">=tablet") {
+  .header--mini .header__pill {
+    margin-top: 0;
+  }
+
+  .header--mini .header__copy {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
 }
