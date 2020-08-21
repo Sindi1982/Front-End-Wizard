@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
-import rootReducer from "./redux/reducers";
+import rootReducer from "./reducers";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HomePage, VersionHistoryPage, ContributorsPage, CategoryPage } from "./pages";
 import { Header, Footer } from "./components";

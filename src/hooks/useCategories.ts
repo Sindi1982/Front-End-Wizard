@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { CategoryActions } from "../enums";
 import API from "../services/api";
-import { RootState } from "../redux/reducers";
+import { RootState } from "../reducers";
 
 const useCategories = () => {
     const dispatch = useDispatch();
