@@ -10,7 +10,9 @@ import "./assets/styles/index.scss";
 
 const store = createStore(
     rootReducer,
-    {},
+    {
+        favorites: JSON.parse(localStorage.getItem("favorites") || "[]"),
+    },
     (window as any).__REDUX_DEVTOOLS_EXTENSION__ ? (window as any).__REDUX_DEVTOOLS_EXTENSION__() : (a) => a,
 );
 
