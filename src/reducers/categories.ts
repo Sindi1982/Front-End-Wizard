@@ -1,5 +1,5 @@
-import { CategoryActions } from "../../enums";
-import { ICategoryReducer, ICategoryAction, ICategory } from "../../interfaces";
+import { CategoryActions } from "../enums";
+import { ICategoryReducer, ICategoryAction, ICategory } from "../interfaces";
 
 const INITIAL_STATE: ICategoryReducer = {
     loading: false,

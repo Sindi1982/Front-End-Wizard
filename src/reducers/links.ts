@@ -1,5 +1,5 @@
-import { LinkActions } from "../../enums";
-import { ILinkGroup, ILinkFetch, ILinkAction } from "../../interfaces";
+import { LinkActions } from "../enums";
+import { ILinkGroup, ILinkFetch, ILinkAction } from "../interfaces";
 
 const INITIAL_STATE: ILinkGroup[] = [];
 

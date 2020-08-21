@@ -1,6 +1,6 @@
 import React from "react";
-import useContributors from "../../hooks/useContributors";
-import { Error, Spinner } from "../../components";
+import useContributors from "../hooks/useContributors";
+import { Error, Spinner } from "../components";
 
 const ContributorsPage: React.FC = () => {
     const [contributors, error, loading] = useContributors();

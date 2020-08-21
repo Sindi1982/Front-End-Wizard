@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import useLinks from "../../hooks/useLinks";
-import useCategories from "../../hooks/useCategories";
-import { Link, Spinner, Error } from "../../components";
-import { ILink, ILinkGroup } from "../../interfaces";
+import useLinks from "../hooks/useLinks";
+import useCategories from "../hooks/useCategories";
+import { Link, Spinner, Error } from "../components";
+import { ILink, ILinkGroup } from "../interfaces";
 
 const CategoryPage: React.FC = () => {
     const { name } = useParams();

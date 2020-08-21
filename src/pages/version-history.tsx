@@ -1,5 +1,5 @@
 import React from "react";
-import { Pill } from "../../components";
+import { Pill } from "../components";
 
 const versionHistory = [
     {
