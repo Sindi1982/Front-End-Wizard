@@ -1,0 +1,15 @@
+@import "../../../node_modules/include-media/dist/include-media";
+
+$font-family: 'Open Sans', sans-serif;
+
+$breakpoints: (tablet: 768px, large: 992px, desktop: 1200px);
+
+$color-black: #181818;
+$color-white: #ffffff;
+$color-offwhite: #f6f6f6;
+$color-grey: #cbcbcb;
+$color-purple: #794bc4;
+$color-blue: #1da1f2;
+$color-green: #2ecc71;
+
+$border-radius-sm: 4px;

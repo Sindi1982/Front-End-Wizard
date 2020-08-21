@@ -1,0 +1,20 @@
+.category__title {
+  margin-bottom: 1rem;
+}
+
+.category__description {
+  margin-bottom: 2em;
+}
+
+.category_links {
+  margin-bottom: 3em;
+  display: grid;
+  grid-gap: 1em;
+  @include media(">=tablet") {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.category__redirect {
+  margin-bottom: .5em;
+}

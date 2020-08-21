@@ -1,0 +1,31 @@
+@import "reset";
+@import "variables";
+@import "typography";
+@import "grid";
+@import "header";
+@import "pill";
+@import "footer";
+@import "version-history";
+@import "contributors";
+@import "home";
+@import "link";
+@import "category";
+@import "spinner";
+@import "error";
+
+body {
+  line-height: 1.2;
+  font-family: $font-family;
+  font-size: 16px;
+  color: $color-black;
+}
+
+#main {
+  min-height: calc(100vh - 264px);
+  @include media(">=400px") {
+    min-height: calc(100vh - 248.33px);
+  }
+  @include media(">=tablet") {
+    min-height: calc(100vh - 170px);
+  }
+}
