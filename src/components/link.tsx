@@ -7,9 +7,10 @@ import moment from "moment";
 interface ILinkComp {
     link: ILink;
     bookmarked: boolean;
+    favoriteLink: (id: string) => void;
 }
 
-const Link = ({ link, bookmarked = false }: ILinkComp) => (
+const Link = ({ link, bookmarked = false, favoriteLink }: ILinkComp) => (
     <a className="link" href={link.url} target="_blank" rel="noopener noreferrer">
         <div className="link_icon">
             <img
@@ -18,7 +19,7 @@ const Link = ({ link, bookmarked = false }: ILinkComp) => (
                 alt="link icon"
                 onClick={(e) => {
                     e.preventDefault();
-                    console.log(`Bookmark #${link._id}`);
+                    favoriteLink(link._id);
                 }}
             />
         </div>

@@ -4,11 +4,16 @@ import useLinks from "../hooks/useLinks";
 import useCategories from "../hooks/useCategories";
 import { Link, Spinner, Error } from "../components";
 import { ILink, ILinkGroup } from "../interfaces";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../reducers";
+import { FavoritesActions } from "../enums";
 
 const CategoryPage: React.FC = () => {
     const { name } = useParams();
     const [categories] = useCategories();
     const [links, fetchLinks] = useLinks();
+    const dispatch = useDispatch();
+    const favorites = useSelector((state: RootState) => state.favorites);
 
     useEffect(() => {
         fetchLinks(name);
@@ -30,13 +35,26 @@ const CategoryPage: React.FC = () => {
 
     if (!currentCategory) return <Error message={`No category for ${name}`} />;
 
+    const favoriteLink = (id: string): void => {
+        if (favorites.includes(id)) {
+            dispatch({ type: FavoritesActions.FAVORITES_REMOVE, payload: id });
+        } else {
+            dispatch({ type: FavoritesActions.FAVORITES_ADD, payload: id });
+        }
+    };
+
     return (
         <div className="container">
             <h2 className="text-center category__title">{currentCategory.name}</h2>
             <p className="text-center category__description">{currentCategory.description}</p>
             <div className="category_links">
                 {linkGroup.links.map((link: ILink) => (
-                    <Link key={link._id} link={link} bookmarked={false} />
+                    <Link
+                        key={link._id}
+                        link={link}
+                        bookmarked={favorites.includes(link._id)}
+                        favoriteLink={favoriteLink}
+                    />
                 ))}
             </div>
         </div>

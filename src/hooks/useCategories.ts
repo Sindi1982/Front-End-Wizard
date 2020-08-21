@@ -6,8 +6,7 @@ import { RootState } from "../reducers";
 
 const useCategories = () => {
     const dispatch = useDispatch();
-    const selectCategories = (state: RootState) => state.categories;
-    const categories = useSelector(selectCategories);
+    const categories = useSelector((state: RootState) => state.categories);
 
     useEffect(() => {
         const fetchCategories = async () => {
