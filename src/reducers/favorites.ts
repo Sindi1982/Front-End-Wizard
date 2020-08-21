@@ -10,10 +10,12 @@ export interface IFavoritesAction {
 const favoritesReducer = (state = INITIAL_STATE, action: IFavoritesAction): string[] => {
     switch (action.type) {
         case FavoritesActions.FAVORITES_ADD:
+            localStorage.setItem("favorites", JSON.stringify([...state, action.payload]));
             return [...state, action.payload];
         case FavoritesActions.FAVORITES_REMOVE:
-            console.log(`Remove Favorite ${action.payload}`);
-            return state;
+            const newState = state.filter((e) => e !== action.payload);
+            localStorage.setItem("favorites", JSON.stringify(newState));
+            return newState;
         default:
             return state;
     }
