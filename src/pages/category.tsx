@@ -13,7 +13,8 @@ const CategoryPage: React.FC = () => {
     const [categories] = useCategories();
     const [links, fetchLinks] = useLinks();
     const dispatch = useDispatch();
-    const favorites = useSelector((state: RootState) => state.favorites);
+    const favoritesSelector = (state: RootState) => state.favorites as string[];
+    const favorites = useSelector(favoritesSelector);
 
     useEffect(() => {
         fetchLinks(name);
