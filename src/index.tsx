@@ -8,7 +8,11 @@ import { HomePage, VersionHistoryPage, ContributorsPage, CategoryPage } from "./
 import { Header, Footer } from "./components";
 import "./assets/styles/index.scss";
 
-const store = createStore(rootReducer);
+const store = createStore(
+    rootReducer,
+    {},
+    (window as any).__REDUX_DEVTOOLS_EXTENSION__ ? (window as any).__REDUX_DEVTOOLS_EXTENSION__() : (a) => a,
+);
 
 const App: React.FC = () => (
     <Provider store={store}>
