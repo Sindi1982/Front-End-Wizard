@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ICategory } from "../../interfaces";
-import useCategories from "../../hooks/useCategories";
-import { Spinner, Error } from "../../components";
+import { ICategory } from "../interfaces";
+import useCategories from "../hooks/useCategories";
+import { Spinner, Error } from "../components";
 
 const HomePage: React.FC = () => {
     const [categories] = useCategories();
