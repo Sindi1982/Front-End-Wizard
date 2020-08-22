@@ -47,10 +47,10 @@ const CategoryPage: React.FC = () => {
     return (
         <div className="container">
             <h2 className="text-center category__title">{currentCategory.name}</h2>
-            <p className="text-center category__redirect">
-                No the category you are looking for? <Route to="/">Click Here</Route> to view all categories
+            <p className="text-center category__description">
+                {currentCategory.description} Not the category you expected? <Route to="/">Click Here</Route> to view
+                all categories
             </p>
-            <p className="text-center category__description">{currentCategory.description}</p>
             <div className="category_links">
                 {linkGroup.links.map((link: ILink) => (
                     <Link

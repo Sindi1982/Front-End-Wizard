@@ -3,6 +3,16 @@ import { Pill } from "../components";
 
 const versionHistory = [
     {
+        version: "3.0.1",
+        description: "Mobile Tweaks",
+        features: [
+            "Fixed category pills on mobile to make more readable",
+            "Fixed bug on link cards only filling up 2/3 of the column",
+            "A range of mobile spacing tweaks and typography tweaks to improve UX on mobile",
+            "Increased tap size of the bookmark icon",
+        ],
+    },
+    {
         version: "3.0.0",
         description: "Full rebuild",
         features: [

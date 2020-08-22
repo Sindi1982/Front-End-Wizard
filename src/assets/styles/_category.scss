@@ -3,7 +3,8 @@
 }
 
 .category__description {
-  margin-bottom: 2em;
+  max-width: 800px;
+  margin: 0 auto 2em auto;
 }
 
 .category_links {
@@ -16,5 +17,5 @@
 }
 
 .category__redirect {
-  margin-bottom: .5em;
+  margin-bottom: 1em;
 }
