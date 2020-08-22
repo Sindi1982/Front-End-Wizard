@@ -19,7 +19,7 @@ const Header: React.FC = () => {
                         </Link>
                         <div>
                             <Link className="header__pill" to="/version-history">
-                                <Pill version="3.0.0" />
+                                <Pill version="3.0.1" />
                             </Link>
                         </div>
                     </div>

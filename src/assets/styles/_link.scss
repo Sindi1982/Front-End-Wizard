@@ -1,11 +1,11 @@
 .link {
   display: grid;
-  grid-template-columns: 24px 1fr 100px;
+  grid-template-columns: 24px 1fr;
   text-decoration: none;
   border-radius: $border-radius-sm;
   padding: 1em;
-  border: 2px solid $color-blue;
   grid-gap: 1em;
+  border: 2px solid $color-blue;
   align-items: center;
   background: $color-offwhite;
   &:focus {
@@ -19,22 +19,27 @@
 }
 
 .link_icon-img {
+  margin-left: -1em;
+  padding: 1em;
   width: 24px;
   height: 24px;
 }
 
 .link_title {
+  font-size: 1.1em;
   font-weight: 700;
   color: $color-blue;
-  margin-bottom: .2em;
-}
-.link_description {
-  font-size: .9em;
-  color: $color-black;
   margin-bottom: .5em;
 }
+.link_description { margin-bottom: .5em; }
 
+.link_date { font-style: italic; }
+
+.link_description,
 .link_date {
   color: $color-black;
-  font-size: .9em;
+  font-size: .85em;
+  @include media(">=tablet") {
+    font-size: .9em;
+  }
 }
